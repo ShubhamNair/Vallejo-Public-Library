@@ -18,27 +18,31 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="book-details-container">
             <h2>Book Details</h2>
-            <dl>
-                <dt>Title:</dt>
-                <dd>The Great Gatsby</dd>
-                <dt>Author:</dt>
-                <dd>F. Scott Fitzgerald</dd>
-                <dt>Genre:</dt>
-                <dd>Fiction</dd>
-                <dt>Synopsis:</dt>
-                <dd>A classic novel set in the Jazz Age, exploring themes of wealth and love.</dd>
-                <dt>Copies Available:</dt>
-                <dd>3 out of 5</dd>
-            </dl>
-            <form action="/reserve" method="post">
-                <button type="submit">Reserve this Book</button>
-            </form>
+            <div class="book-info">
+                <dl>
+                    <dt>Title:</dt>
+                    <dd>The Great Gatsby</dd>
+                    <dt>Author:</dt>
+                    <dd>F. Scott Fitzgerald</dd>
+                    <dt>Genre:</dt>
+                    <dd>Fiction</dd>
+                    <dt>Synopsis:</dt>
+                    <dd>A classic novel set in the Jazz Age, exploring themes of wealth and love.</dd>
+                    <dt>Copies Available:</dt>
+                    <dd>3 out of 5</dd>
+                </dl>
+                <form class="reserve-form" action="/reserve" method="post">
+                    <button type="submit">Reserve this Book</button>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
         <p>Contact us: <a href="mailto:nair.shu@northeastern.edu">nair.shu@northeastern.edu</a></p>
     </footer>
+
+    <script src="scripts\reserve.js"></script>
 </body>
 </html>

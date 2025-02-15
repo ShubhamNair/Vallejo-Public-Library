@@ -132,6 +132,17 @@ button:hover {
 }
 
 /* Book details page */
+.book-details-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.book-info {
+    display: grid;
+    gap: 2rem;
+}
+
 dl {
     display: grid;
     gap: 1rem;
@@ -145,6 +156,10 @@ dt {
 dd {
     margin-left: 0;
     margin-bottom: 0.5rem;
+}
+
+.reserve-form {
+    text-align: center;
 }
 
 /* Latest news section */
@@ -196,6 +211,25 @@ footer a:hover {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
     }
+
+    /* Book details page tablet improvements */
+    .book-details-container {
+        padding: 2rem;
+    }
+
+    .book-info {
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+    }
+
+    .book-info dl {
+        margin-bottom: 0;
+    }
+
+    .reserve-form {
+        position: sticky;
+        top: 2rem;
+    }
 }
 
 /* Desktop styles */
@@ -217,6 +251,15 @@ footer a:hover {
     .news-section {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    /* Book details page desktop improvements */
+    .book-details-container {
+        padding: 3rem;
+    }
+
+    .book-info {
+        gap: 4rem;
+    }
 }
 
 /* Accessibility improvements */
@@ -236,5 +279,50 @@ footer a:hover {
     
     a {
         color: #003366;
+    }
+}
+
+/* Search form styles */
+.search-form {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.search-form input {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 0;
+}
+
+.search-form button {
+    white-space: nowrap;
+}
+
+/* Library hours styles */
+.library-hours dl {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+/* Mobile-specific adjustments */
+@media screen and (max-width: 767px) {
+    .header-content {
+        text-align: center;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .book-info {
+        grid-template-columns: 1fr;
+    }
+
+    .reserve-form {
+        margin-top: 2rem;
     }
 }
